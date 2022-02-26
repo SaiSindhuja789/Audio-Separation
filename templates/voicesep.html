@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html><head>
+	<title>"Voice separation"</title>
+	<style type="text/css">
+		section 
+     {
+     	display:flex;
+     	
+     }
+     section div
+     {
+     	flex:1;
+     }
+	    .spacing
+		{
+			
+			margin-top: 50px;
+			margin-left: 90px;
+			margin-right: 90px;
+
+		}
+		div audio
+		{
+			padding:20px;
+			margin-bottom: 5px;
+
+
+		}
+		body
+		{
+			
+			/*background-repeat:no-repeat;
+			background-attached: fixed;
+			background-size:cover;*/
+			background-size: 100% 100% ;
+			background-image:url({{url_for('static',filename='images/w1.jpeg')}});
+
+		}
+		h1{
+			font-size:50px;
+		}
+	</style>
+</head>
+<body >
+	
+	<h1><center>Voice Separation</center></h1>
+   
+    <section>
+
+	<div class="spacing">
+		<center>
+			<h2>Input</h2>
+			<audio src="static/music/f11.wav" controls=""></audio>
+
+		<audio src="static/music/f22.wav" controls=""></audio></center>
+		
+	</div>
+
+	<div class="spacing">
+		<center>
+			<h2>Output</h2>
+			<audio src="static/music/f22out.wav" controls=""></audio>
+		<audio src="static/music/f11out.wav" controls=""></audio></center>
+		
+	</div>
+  </section>
+  <section>
+	<div class="spacing">
+		<center>
+			<h2>Input</h2>
+			<audio src="static/music/mixedX.wav" controls=""></audio>
+
+		<audio src="static/music/mixedY.wav" controls=""></audio></center>
+		
+	</div>
+
+	<div class="spacing">
+		<center>
+			<h2>Output</h2>
+			<audio src="static/music/result_signal_1.wav" controls=""></audio>
+		<audio src="static/music/result_signal_2.wav" controls=""></audio></center>
+		
+	</div>
+  </section>
+    
+
+
+
+</body></html>
